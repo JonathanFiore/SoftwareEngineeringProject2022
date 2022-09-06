@@ -1,0 +1,28 @@
+@font-face {
+    -fx-font-family: 'Dutch801 Rm BT Bold';
+    src: url('../images/font/DutchBoldItalic.ttf');
+}
+
+#anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#play:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#quit:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#winnerText{
+    -fx-font-family: "Dutch801 Rm BT Bold";
+    -fx-text-fill: white;
+    -fx-font-size: 54;
+    -fx-effect: dropshadow(three-pass-box, #466586, 2, 1, 0, 0);
+}

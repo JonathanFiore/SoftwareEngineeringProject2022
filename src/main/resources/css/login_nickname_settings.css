@@ -1,0 +1,79 @@
+@font-face {
+    -fx-font-family: 'Dutch801 Rm BT';
+    src: url('../images/font/Du801It.ttf');
+}
+
+#ipLabel{
+    -fx-font-family: "Dutch801 Rm BT";
+}
+
+#portLabel{
+    -fx-font-family: "Dutch801 Rm BT";
+}
+
+#nicknameLabel{
+    -fx-font-family: "Dutch801 Rm BT";
+}
+
+#ipError{
+    -fx-font-family: "Dutch801 Rm BT";
+}
+
+#portError{
+    -fx-font-family: "Dutch801 Rm BT";
+}
+
+#nicknameError{
+    -fx-font-family: "Dutch801 Rm BT";
+}
+
+#submitButton{
+    -fx-font-family: "Dutch801 Rm BT";
+}
+
+#nicknameLongError{
+    -fx-font-family: "Dutch801 Rm BT";
+}
+
+#nicknameTakenError{
+    -fx-font-family: "Dutch801 Rm BT";
+}
+
+#choosegamemode{
+    -fx-font-family: "Dutch801 Rm BT";
+}
+
+#choosenumberp{
+    -fx-font-family: "Dutch801 Rm BT";
+}
+
+#anchorp{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}
+
+#expmode:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#easmode:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#twoplayers:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#threeplayers:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#fourplayers:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}

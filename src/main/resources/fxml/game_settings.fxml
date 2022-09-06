@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.gui.controllers.GameSettingsController">
+    <children>
+        <GridPane fx:id="gridbase" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="12.5" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <GridPane fx:id="playergrid" GridPane.rowIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <ImageView fx:id="twoplayers" fitHeight="203.0" fitWidth="210.0" onMouseClicked="#clickTwo" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                            <image>
+                                <Image url="@../images/settings/2pl.png" />
+                            </image>
+                            <effect>
+                                <DropShadow height="10.0" radius="4.5" width="10.0">
+                                    <color>
+                                        <Color red="0.21559999883174896" green="0.9672600030899048" blue="0.9800000190734863" opacity="0.6499999761581421" />
+                                    </color>
+                                </DropShadow>
+                            </effect></ImageView>
+                        <ImageView fx:id="threeplayers" fitHeight="203.0" fitWidth="210.0" onMouseClicked="#clickThree" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                            <image>
+                                <Image url="@../images/settings/3pl.png" />
+                            </image>
+                            <effect>
+                                <DropShadow height="10.0" radius="4.5" width="10.0">
+                                    <color>
+                                        <Color red="0.21568627655506134" green="0.9686274528503418" blue="0.9843137264251709" opacity="0.6499999761581421" />
+                                    </color>
+                                </DropShadow>
+                            </effect></ImageView>
+                        <ImageView fx:id="fourplayers" fitHeight="203.0" fitWidth="210.0" onMouseClicked="#clickFour" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                            <image>
+                                <Image url="@../images/settings/4pl.png" />
+                            </image>
+                            <effect>
+                                <DropShadow height="11.38" radius="4.845000000000001" width="10.0">
+                                    <color>
+                                        <Color red="0.21559999883174896" green="0.9672600030899048" blue="0.9800000190734863" opacity="0.6499999761581421" />
+                                    </color>
+                                </DropShadow>
+                            </effect></ImageView>
+                    </children>
+                </GridPane>
+                <Text fx:id="choosenumberp" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose the number of players" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <effect>
+                        <DropShadow radius="18.2725" spread="0.68" width="54.09">
+                            <color>
+                                <Color red="0.30092594027519226" green="0.584876537322998" blue="0.8333333134651184" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+               <font>
+                  <Font size="48.0" />
+               </font>
+                </Text>
+                <Text fx:id="choosegamemode" fill="WHITE" layoutX="469.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose the game mode" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                    <effect>
+                        <DropShadow radius="18.2725" spread="0.68" width="54.09">
+                            <color>
+                                <Color red="0.30092594027519226" green="0.584876537322998" blue="0.8333333134651184" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+               <font>
+                  <Font size="48.0" />
+               </font>
+                </Text>
+                <GridPane fx:id="modegrid" GridPane.rowIndex="3">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <ImageView fx:id="expmode" fitHeight="203.0" fitWidth="210.0" onMouseClicked="#clickExpert" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                            <image>
+                                <Image url="@../images/settings/modeexp.png" />
+                            </image>
+                            <effect>
+                                <DropShadow height="10.0" radius="4.5" width="10.0">
+                                    <color>
+                                        <Color red="0.21559999883174896" green="0.9672600030899048" blue="0.9800000190734863" opacity="0.6499999761581421" />
+                                    </color>
+                                </DropShadow>
+                            </effect>
+                        </ImageView>
+                        <ImageView fx:id="easmode" fitHeight="203.0" fitWidth="210.0" onMouseClicked="#clickEasy" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                            <image>
+                                <Image url="@../images/settings/modeeas.png" />
+                            </image>
+                            <effect>
+                                <DropShadow height="11.38" radius="4.845000000000001" width="10.0">
+                                    <color>
+                                        <Color red="0.21559999883174896" green="0.9672600030899048" blue="0.9800000190734863" opacity="0.6499999761581421" />
+                                    </color>
+                                </DropShadow>
+                            </effect>
+                        </ImageView>
+                    </children>
+                </GridPane>
+            <ImageView fx:id="confirm" fitHeight="85.0" fitWidth="238.0" onMousePressed="#clickConfirmON" onMouseReleased="#clickConfirmOFF" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/texts/confirm.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.62" contrast="-0.51" />
+               </effect>
+            </ImageView>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

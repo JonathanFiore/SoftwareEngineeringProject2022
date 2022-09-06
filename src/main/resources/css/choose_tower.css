@@ -1,0 +1,21 @@
+#anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#t1:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#t2:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#t3:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}

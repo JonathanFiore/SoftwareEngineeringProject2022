@@ -1,0 +1,882 @@
+@font-face {
+    -fx-font-family: 'Dutch801 Rm BT Bold';
+    src: url('../images/font/DutchBoldItalic.ttf');
+}
+
+@font-face {
+    -fx-font-family: 'Dutch801 Rm BT Italic';
+    src: url('../images/font/DutchItalic.ttf');
+}
+
+@font-face {
+    -fx-font-family: 'Bongkar';
+    src: url('../images/font/Bongkar.ttf');
+}
+
+.tab-pane *.tab-header-background {
+    -fx-background-color: #466586;
+    -fx-border-color: white;
+    -fx-border-width: 0 0 3 0;
+    -fx-opacity: 0.7;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0 0 0 0;
+    -fx-padding: 3.0 0.0em 0.0em 8.0;
+}
+
+.tab {
+    -fx-padding: 8 30 8 30;
+    -fx-background-color: #b79275;
+    -fx-background-insets: 0 0 3 0;
+    -fx-background-radius: 0.0;
+    -fx-border-color: white;
+    -fx-border-width: 1 1 0 1;
+    -fx-opacity: 0.5;
+
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.tab:selected {
+    -fx-background-color: #466586;
+    -fx-background-insets: 0.0;
+    -fx-border-color: white;
+    -fx-border-width: 4 4 0 4;
+    -fx-opacity: 1.0;
+
+    -fx-background-radius: 6;
+    -fx-border-radius: 3;
+}
+
+.tab:selected .focus-indicator{
+    -fx-focus-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.label{
+    -fx-font-family: "Dutch801 Rm BT Italic";
+}
+
+.tab:selected .label{
+    -fx-font-family: "Dutch801 Rm BT Bold";
+}
+
+#tableTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 22;
+}
+
+#deckTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+}
+
+#boardsTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+}
+
+#charactersTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+}
+
+#cloudsTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+}
+
+#motherNature_title{
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+}
+
+#boardPlayerNick{
+    -fx-font-family: "Dutch801 Rm BT Bold";
+    -fx-text-fill: white;
+    -fx-font-size: 25;
+    -fx-effect: dropshadow(three-pass-box, #b79275, 2, 1, 0, 0);
+}
+
+
+#boardTopNick{
+    -fx-font-family: "Dutch801 Rm BT Bold";
+    -fx-text-fill: white;
+    -fx-font-size: 25;
+    -fx-effect: dropshadow(three-pass-box, #466586, 2, 1, 0, 0);
+}
+
+#boardMidNick{
+    -fx-font-family: "Dutch801 Rm BT Bold";
+    -fx-text-fill: white;
+    -fx-font-size: 25;
+    -fx-effect: dropshadow(three-pass-box, #466586, 2, 1, 0, 0);
+}
+
+#boardBotNick{
+    -fx-font-family: "Dutch801 Rm BT Bold";
+    -fx-text-fill: white;
+    -fx-font-size: 25;
+    -fx-effect: dropshadow(three-pass-box, #466586, 2, 1, 0, 0);
+}
+
+#table_anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#deck_anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#boards_anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#characters_anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#clouds_anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#motherNature_anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#boardPlayerNickBox{
+    -fx-background-image: url("../images/texts/nick_box_blue.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0.15, 0, 0);
+}
+
+#boardTopNickBox{
+    -fx-background-image: url("../images/texts/nick_box.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0.15, 0, 0);
+}
+
+#boardMidNickBox{
+    -fx-background-image: url("../images/texts/nick_box.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0.15, 0, 0);
+}
+
+#boardBotNickBox{
+    -fx-background-image: url("../images/texts/nick_box.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0.15, 0, 0);
+}
+
+#assistant1:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#assistant2:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#assistant3:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#assistant4:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#assistant5:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#assistant6:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#assistant7:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+#assistant8:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#assistant9:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#assistant10:hover {
+    -fx-scale-x: 1.3px;
+    -fx-scale-y: 1.3px;
+}
+
+#character_effect_text {
+    -fx-font-size: 25;
+    -fx-fill: white;
+    -fx-font-family: 'Dutch801 Rm BT Italic';
+}
+
+#character1:hover {
+    -fx-scale-x: 1.1px;
+    -fx-scale-y: 1.1px;
+}
+
+#character2:hover {
+    -fx-scale-x: 1.1px;
+    -fx-scale-y: 1.1px;
+}
+
+#character3:hover {
+    -fx-scale-x: 1.1px;
+    -fx-scale-y: 1.1px;
+}
+
+#island1GreenTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkgreen, 2, 1, 0, 0);
+}
+
+#island1RedTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkred, 2, 1, 0, 0);
+}
+
+#island1YellowTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, orange, 2, 1, 0, 0);
+}
+
+#island1PinkTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, deeppink, 2, 1, 0, 0);
+}
+
+#island1BlueTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkblue, 2, 1, 0, 0);
+}
+
+#island2GreenTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkgreen, 2, 1, 0, 0);
+}
+
+#island2RedTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkred, 2, 1, 0, 0);
+}
+
+#island2YellowTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, orange, 2, 1, 0, 0);
+}
+
+#island2PinkTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, deeppink, 2, 1, 0, 0);
+}
+
+#island2BlueTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkblue, 2, 1, 0, 0);
+}
+
+#island3GreenTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkgreen, 2, 1, 0, 0);
+}
+
+#island3RedTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkred, 2, 1, 0, 0);
+}
+
+#island3YellowTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, orange, 2, 1, 0, 0);
+}
+
+#island3PinkTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, deeppink, 2, 1, 0, 0);
+}
+
+#island3BlueTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkblue, 2, 1, 0, 0);
+}
+
+#island4GreenTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkgreen, 2, 1, 0, 0);
+}
+
+#island4RedTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkred, 2, 1, 0, 0);
+}
+
+#island4YellowTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, orange, 2, 1, 0, 0);
+}
+
+#island4PinkTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, deeppink, 2, 1, 0, 0);
+}
+
+#island4BlueTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkblue, 2, 1, 0, 0);
+}
+
+#island5GreenTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkgreen, 2, 1, 0, 0);
+}
+
+#island5RedTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkred, 2, 1, 0, 0);
+}
+
+#island5YellowTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, orange, 2, 1, 0, 0);
+}
+
+#island5PinkTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, deeppink, 2, 1, 0, 0);
+}
+
+#island5BlueTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkblue, 2, 1, 0, 0);
+}
+
+#island6GreenTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkgreen, 2, 1, 0, 0);
+}
+
+#island6RedTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkred, 2, 1, 0, 0);
+}
+
+#island6YellowTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, orange, 2, 1, 0, 0);
+}
+
+#island6PinkTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, deeppink, 2, 1, 0, 0);
+}
+
+#island6BlueTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkblue, 2, 1, 0, 0);
+}
+
+#island7GreenTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkgreen, 2, 1, 0, 0);
+}
+
+#island7RedTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkred, 2, 1, 0, 0);
+}
+
+#island7YellowTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, orange, 2, 1, 0, 0);
+}
+
+#island7PinkTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, deeppink, 2, 1, 0, 0);
+}
+
+#island7BlueTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkblue, 2, 1, 0, 0);
+}
+
+#island8GreenTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkgreen, 2, 1, 0, 0);
+}
+
+#island8RedTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkred, 2, 1, 0, 0);
+}
+
+#island8YellowTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, orange, 2, 1, 0, 0);
+}
+
+#island8PinkTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, deeppink, 2, 1, 0, 0);
+}
+
+#island8BlueTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkblue, 2, 1, 0, 0);
+}
+
+#island9GreenTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkgreen, 2, 1, 0, 0);
+}
+
+#island9RedTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkred, 2, 1, 0, 0);
+}
+
+#island9YellowTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, orange, 2, 1, 0, 0);
+}
+
+#island9PinkTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, deeppink, 2, 1, 0, 0);
+}
+
+#island9BlueTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkblue, 2, 1, 0, 0);
+}
+
+#island10GreenTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkgreen, 2, 1, 0, 0);
+}
+
+#island10RedTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkred, 2, 1, 0, 0);
+}
+
+#island10YellowTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, orange, 2, 1, 0, 0);
+}
+
+#island10PinkTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, deeppink, 2, 1, 0, 0);
+}
+
+#island10BlueTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkblue, 2, 1, 0, 0);
+}
+
+#island11GreenTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkgreen, 2, 1, 0, 0);
+}
+
+#island11RedTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkred, 2, 1, 0, 0);
+}
+
+#island11YellowTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, orange, 2, 1, 0, 0);
+}
+
+#island11PinkTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, deeppink, 2, 1, 0, 0);
+}
+
+#island11BlueTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkblue, 2, 1, 0, 0);
+}
+
+#island12GreenTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkgreen, 2, 1, 0, 0);
+}
+
+#island12RedTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkred, 2, 1, 0, 0);
+}
+
+#island12YellowTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, orange, 2, 1, 0, 0);
+}
+
+#island12PinkTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, deeppink, 2, 1, 0, 0);
+}
+
+#island12BlueTot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, darkblue, 2, 1, 0, 0);
+}
+
+#character1Effect_anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#character1EffectTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 22;
+}
+
+#character3_5Effect_anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#character3_5EffectTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 22;
+}
+
+#character4Effect_anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#character4EffectTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 22;
+}
+
+#character9_12Effect_anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#character9_12EffectTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 22;
+}
+
+#character11Effect_anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#character11EffectTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 22;
+}
+
+#character7Effect_anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#character7EffectTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 22;
+}
+
+#character10Effect_anchor{
+    -fx-background-image: url("../images/texts/background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#character10EffectTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 22;
+}
+
+#boardPlayerCoinLabel{
+    -fx-font-family: "Dutch801 Rm BT Bold";
+    -fx-text-fill: white;
+    -fx-font-size: 35;
+    -fx-effect: dropshadow(three-pass-box, #466586, 2, 1, 0, 0);
+}
+
+#boardTopCoinLabel{
+    -fx-font-family: "Dutch801 Rm BT Bold";
+    -fx-text-fill: white;
+    -fx-font-size: 35;
+    -fx-effect: dropshadow(three-pass-box, #466586, 2, 1, 0, 0);
+}
+
+#boardMidCoinLabel{
+    -fx-font-family: "Dutch801 Rm BT Bold";
+    -fx-text-fill: white;
+    -fx-font-size: 35;
+    -fx-effect: dropshadow(three-pass-box, #466586, 2, 1, 0, 0);
+}
+
+#boardBotCoinLabel{
+    -fx-font-family: "Dutch801 Rm BT Bold";
+    -fx-text-fill: white;
+    -fx-font-size: 35;
+    -fx-effect: dropshadow(three-pass-box, #466586, 2, 1, 0, 0);
+}
+
+#island1NETot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, midnightblue, 2, 1, 0, 0);
+}
+
+#island2NETot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, midnightblue, 2, 1, 0, 0);
+}
+
+#island3NETot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, midnightblue, 2, 1, 0, 0);
+}
+
+#island4NETot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, midnightblue, 2, 1, 0, 0);
+}
+
+#island5NETot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, midnightblue, 2, 1, 0, 0);
+}
+
+#island6NETot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, midnightblue, 2, 1, 0, 0);
+}
+
+#island7NETot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, midnightblue, 2, 1, 0, 0);
+}
+
+#island8NETot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, midnightblue, 2, 1, 0, 0);
+}
+
+#island9NETot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, midnightblue, 2, 1, 0, 0);
+}
+
+#island100NETot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, midnightblue, 2, 1, 0, 0);
+}
+
+#island11NETot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, midnightblue, 2, 1, 0, 0);
+}
+
+#island12NETot{
+    -fx-font-family: "Bongkar";
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-effect: dropshadow(three-pass-box, midnightblue, 2, 1, 0, 0);
+}

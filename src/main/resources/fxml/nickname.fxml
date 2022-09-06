@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.gui.controllers.NicknameController">
+    <children>
+        <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" percentHeight="35.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ImageView fx:id="logo" fitHeight="273.0" fitWidth="773.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <image>
+                        <Image url="@../images/texts/eriantys_logo.png" />
+                    </image>
+                </ImageView>
+                <GridPane GridPane.rowIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label fx:id="nicknameLabel" opacity="0.75" text="Nickname: " textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                            <font>
+                                <Font name="Dutch 801 Italic BT" size="48.0" />
+                            </font>
+                            <effect>
+                                <DropShadow spread="0.1">
+                                    <color>
+                                        <Color red="0.32156863808631897" green="0.8078431487083435" blue="1.0" />
+                                    </color>
+                                </DropShadow>
+                            </effect>
+                        </Label>
+                        <TextField fx:id="nicknameTextF" prefHeight="35.0" prefWidth="308.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Text fx:id="nicknameTakenError" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="  nickname is already taken, please retry" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <effect>
+                                <DropShadow spread="0.44">
+                                    <color>
+                                        <Color red="0.40432098507881165" green="0.831224262714386" blue="1.0" />
+                                    </color>
+                                </DropShadow>
+                            </effect>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                        </Text>
+                        <Text fx:id="nicknameLongError" fill="WHITE" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  nickname's size is not valid, please retry" wrappingWidth="493.346435546875" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <effect>
+                                <DropShadow spread="0.44">
+                                    <color>
+                                        <Color red="0.40432098507881165" green="0.831224262714386" blue="1.0" />
+                                    </color>
+                                </DropShadow>
+                            </effect>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                        </Text>
+                    </children>
+                </GridPane>
+            <ImageView fx:id="confirm" fitHeight="110.0" fitWidth="259.0" onMousePressed="#clickConfirmON" onMouseReleased="#clickConfirmOFF" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../images/texts/confirm.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.32156863808631897" green="0.8078431487083435" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
