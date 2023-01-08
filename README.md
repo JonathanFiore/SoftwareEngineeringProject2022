@@ -69,15 +69,15 @@ In  the  folder  **[deliveries](https://github.com/JonathanFiore/SoftwareEnginee
 The project's class  diagrams  in  the  Unified  Modelling  Language can be found in the following folders:
 
 
--  **[Initial  UML](https://github.com/MichelaGregorini/ing-sw-2022-Gregorini-Fiore-Gallicola/tree/main/deliveries/uml/initialUML)**
+-  **[Initial  UML](https://github.com/JonathanFiore/SoftwareEngineeringProject2022/tree/main/deliveries/uml/initialUML)**
 
--  **[Final  UML](https://github.com/MichelaGregorini/ing-sw-2022-Gregorini-Fiore-Gallicola/tree/main/deliveries/uml/finalUML)**
+-  **[Final  UML](https://github.com/JonathanFiore/SoftwareEngineeringProject2022/tree/main/deliveries/uml/finalUML)**
 
 
 
 ### Communication Protocol
 
-The communication protocol can be found **[here](https://github.com/MichelaGregorini/ing-sw-2022-Gregorini-Fiore-Gallicola/blob/main/deliveries/protocol_documentation.pdf)**.
+The communication protocol can be found **[here](https://github.com/JonathanFiore/SoftwareEngineeringProject2022/blob/main/deliveries/protocol_documentation.pdf)**.
 
 <br/>
 
@@ -93,7 +93,7 @@ The jars will be placed into the folder ```target``` and named ```Client.jar``` 
 
 ## Execution Instructions
 
-  The jars can be found **[here](https://github.com/MichelaGregorini/ing-sw-2022-Gregorini-Fiore-Gallicola/tree/main/deliveries/jar)**.
+  The jars can be found **[here](https://github.com/JonathanFiore/SoftwareEngineeringProject2022/tree/main/deliveries/jar)**.
 
   
 
