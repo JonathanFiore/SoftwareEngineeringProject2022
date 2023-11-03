@@ -2,7 +2,7 @@
 
 This project is the final test of **"Software Engineering"** course and it consists in the implementation of the  **[Eriantys](https://craniointernational.com/products/eriantys/)**  board game made by **Cranio Creations**.
 
-<img src="https://craniointernational.com/2021/wp-content/uploads/2021/06/ERIANTYS-BOX-3D.png" width=250px height=250 px align="right" />
+<img src="Eriantys.png" />
 
 
 **Table of contents:**
@@ -35,14 +35,14 @@ This project is the final test of **"Software Engineering"** course and it consi
 
 | Functionality | Status|
 |:---------------:|:----------:|
-|Simplified Rules|🟢|
-|Complete Rules|🟢|
-|Socket|🟢|
-|CLI|🟢| 
-|GUI|🟢|
-|All Character Cards|🟢|
-|4 Players Game|🟢|
-|Multiple Games|🟢|
+|Simplified Rules|:white_check_mark:|
+|Complete Rules|:white_check_mark:|
+|Socket|:white_check_mark:|
+|CLI|:white_check_mark:| 
+|GUI|:white_check_mark:|
+|All Character Cards|:white_check_mark:|
+|4 Players Game|:white_check_mark:|
+|Multiple Games|:white_check_mark:|
 |Persistence|🔴|
 |Disconnection Resilience|🔴|
 
