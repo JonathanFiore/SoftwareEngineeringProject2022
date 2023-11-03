@@ -2,7 +2,7 @@
 
 This project is the final test of **"Software Engineering"** course and it consists in the implementation of the  **[Eriantys](https://craniointernational.com/products/eriantys/)**  board game made by **Cranio Creations**.
 
-<img src="Eriantys.png" />
+<img src="Eriantys.png" width=250px height=250 px align="right" />
 
 
 **Table of contents:**
